@@ -1,0 +1,405 @@
+2025-04-26 00:43:40,098 - INFO - 程序启动
+2025-04-26 00:43:40,477 - DEBUG - Importing AvifImagePlugin
+2025-04-26 00:43:40,481 - DEBUG - Importing BlpImagePlugin
+2025-04-26 00:43:40,484 - DEBUG - Importing BmpImagePlugin
+2025-04-26 00:43:40,484 - DEBUG - Importing BufrStubImagePlugin
+2025-04-26 00:43:40,486 - DEBUG - Importing CurImagePlugin
+2025-04-26 00:43:40,489 - DEBUG - Importing DcxImagePlugin
+2025-04-26 00:43:40,492 - DEBUG - Importing DdsImagePlugin
+2025-04-26 00:43:40,498 - DEBUG - Importing EpsImagePlugin
+2025-04-26 00:43:40,502 - DEBUG - Importing FitsImagePlugin
+2025-04-26 00:43:40,509 - DEBUG - Importing FliImagePlugin
+2025-04-26 00:43:40,511 - DEBUG - Importing FpxImagePlugin
+2025-04-26 00:43:40,516 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-04-26 00:43:40,516 - DEBUG - Importing FtexImagePlugin
+2025-04-26 00:43:40,519 - DEBUG - Importing GbrImagePlugin
+2025-04-26 00:43:40,522 - DEBUG - Importing GifImagePlugin
+2025-04-26 00:43:40,522 - DEBUG - Importing GribStubImagePlugin
+2025-04-26 00:43:40,525 - DEBUG - Importing Hdf5StubImagePlugin
+2025-04-26 00:43:40,526 - DEBUG - Importing IcnsImagePlugin
+2025-04-26 00:43:40,534 - DEBUG - Importing IcoImagePlugin
+2025-04-26 00:43:40,538 - DEBUG - Importing ImImagePlugin
+2025-04-26 00:43:40,541 - DEBUG - Importing ImtImagePlugin
+2025-04-26 00:43:40,544 - DEBUG - Importing IptcImagePlugin
+2025-04-26 00:43:40,546 - DEBUG - Importing JpegImagePlugin
+2025-04-26 00:43:40,547 - DEBUG - Importing Jpeg2KImagePlugin
+2025-04-26 00:43:40,547 - DEBUG - Importing McIdasImagePlugin
+2025-04-26 00:43:40,550 - DEBUG - Importing MicImagePlugin
+2025-04-26 00:43:40,555 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-04-26 00:43:40,555 - DEBUG - Importing MpegImagePlugin
+2025-04-26 00:43:40,557 - DEBUG - Importing MpoImagePlugin
+2025-04-26 00:43:40,568 - DEBUG - Importing MspImagePlugin
+2025-04-26 00:43:40,570 - DEBUG - Importing PalmImagePlugin
+2025-04-26 00:43:40,572 - DEBUG - Importing PcdImagePlugin
+2025-04-26 00:43:40,574 - DEBUG - Importing PcxImagePlugin
+2025-04-26 00:43:40,574 - DEBUG - Importing PdfImagePlugin
+2025-04-26 00:43:40,592 - DEBUG - Importing PixarImagePlugin
+2025-04-26 00:43:40,594 - DEBUG - Importing PngImagePlugin
+2025-04-26 00:43:40,594 - DEBUG - Importing PpmImagePlugin
+2025-04-26 00:43:40,595 - DEBUG - Importing PsdImagePlugin
+2025-04-26 00:43:40,597 - DEBUG - Importing QoiImagePlugin
+2025-04-26 00:43:40,599 - DEBUG - Importing SgiImagePlugin
+2025-04-26 00:43:40,601 - DEBUG - Importing SpiderImagePlugin
+2025-04-26 00:43:40,602 - DEBUG - Importing SunImagePlugin
+2025-04-26 00:43:40,604 - DEBUG - Importing TgaImagePlugin
+2025-04-26 00:43:40,606 - DEBUG - Importing TiffImagePlugin
+2025-04-26 00:43:40,607 - DEBUG - Importing WebPImagePlugin
+2025-04-26 00:43:40,613 - DEBUG - Importing WmfImagePlugin
+2025-04-26 00:43:40,615 - DEBUG - Importing XbmImagePlugin
+2025-04-26 00:43:40,617 - DEBUG - Importing XpmImagePlugin
+2025-04-26 00:43:40,619 - DEBUG - Importing XVThumbImagePlugin
+2025-04-26 00:43:40,622 - DEBUG - STREAM b'IHDR' 2553 13
+2025-04-26 00:43:40,622 - DEBUG - STREAM b'IDAT' 2578 3554
+2025-04-26 00:46:43,117 - INFO - 程序启动
+2025-04-26 00:46:43,471 - DEBUG - Importing AvifImagePlugin
+2025-04-26 00:46:43,473 - DEBUG - Importing BlpImagePlugin
+2025-04-26 00:46:43,475 - DEBUG - Importing BmpImagePlugin
+2025-04-26 00:46:43,476 - DEBUG - Importing BufrStubImagePlugin
+2025-04-26 00:46:43,477 - DEBUG - Importing CurImagePlugin
+2025-04-26 00:46:43,479 - DEBUG - Importing DcxImagePlugin
+2025-04-26 00:46:43,481 - DEBUG - Importing DdsImagePlugin
+2025-04-26 00:46:43,487 - DEBUG - Importing EpsImagePlugin
+2025-04-26 00:46:43,489 - DEBUG - Importing FitsImagePlugin
+2025-04-26 00:46:43,494 - DEBUG - Importing FliImagePlugin
+2025-04-26 00:46:43,496 - DEBUG - Importing FpxImagePlugin
+2025-04-26 00:46:43,500 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-04-26 00:46:43,500 - DEBUG - Importing FtexImagePlugin
+2025-04-26 00:46:43,502 - DEBUG - Importing GbrImagePlugin
+2025-04-26 00:46:43,503 - DEBUG - Importing GifImagePlugin
+2025-04-26 00:46:43,504 - DEBUG - Importing GribStubImagePlugin
+2025-04-26 00:46:43,506 - DEBUG - Importing Hdf5StubImagePlugin
+2025-04-26 00:46:43,507 - DEBUG - Importing IcnsImagePlugin
+2025-04-26 00:46:43,512 - DEBUG - Importing IcoImagePlugin
+2025-04-26 00:46:43,514 - DEBUG - Importing ImImagePlugin
+2025-04-26 00:46:43,515 - DEBUG - Importing ImtImagePlugin
+2025-04-26 00:46:43,517 - DEBUG - Importing IptcImagePlugin
+2025-04-26 00:46:43,519 - DEBUG - Importing JpegImagePlugin
+2025-04-26 00:46:43,519 - DEBUG - Importing Jpeg2KImagePlugin
+2025-04-26 00:46:43,519 - DEBUG - Importing McIdasImagePlugin
+2025-04-26 00:46:43,520 - DEBUG - Importing MicImagePlugin
+2025-04-26 00:46:43,526 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-04-26 00:46:43,526 - DEBUG - Importing MpegImagePlugin
+2025-04-26 00:46:43,528 - DEBUG - Importing MpoImagePlugin
+2025-04-26 00:46:43,536 - DEBUG - Importing MspImagePlugin
+2025-04-26 00:46:43,539 - DEBUG - Importing PalmImagePlugin
+2025-04-26 00:46:43,542 - DEBUG - Importing PcdImagePlugin
+2025-04-26 00:46:43,543 - DEBUG - Importing PcxImagePlugin
+2025-04-26 00:46:43,543 - DEBUG - Importing PdfImagePlugin
+2025-04-26 00:46:43,557 - DEBUG - Importing PixarImagePlugin
+2025-04-26 00:46:43,558 - DEBUG - Importing PngImagePlugin
+2025-04-26 00:46:43,558 - DEBUG - Importing PpmImagePlugin
+2025-04-26 00:46:43,559 - DEBUG - Importing PsdImagePlugin
+2025-04-26 00:46:43,560 - DEBUG - Importing QoiImagePlugin
+2025-04-26 00:46:43,561 - DEBUG - Importing SgiImagePlugin
+2025-04-26 00:46:43,563 - DEBUG - Importing SpiderImagePlugin
+2025-04-26 00:46:43,565 - DEBUG - Importing SunImagePlugin
+2025-04-26 00:46:43,567 - DEBUG - Importing TgaImagePlugin
+2025-04-26 00:46:43,569 - DEBUG - Importing TiffImagePlugin
+2025-04-26 00:46:43,571 - DEBUG - Importing WebPImagePlugin
+2025-04-26 00:46:43,575 - DEBUG - Importing WmfImagePlugin
+2025-04-26 00:46:43,577 - DEBUG - Importing XbmImagePlugin
+2025-04-26 00:46:43,579 - DEBUG - Importing XpmImagePlugin
+2025-04-26 00:46:43,581 - DEBUG - Importing XVThumbImagePlugin
+2025-04-26 00:46:43,584 - DEBUG - STREAM b'IHDR' 2553 13
+2025-04-26 00:46:43,585 - DEBUG - STREAM b'IDAT' 2578 3554
+2025-04-26 00:51:16,884 - INFO - 程序启动
+2025-04-26 00:51:17,277 - DEBUG - Importing AvifImagePlugin
+2025-04-26 00:51:17,309 - DEBUG - Importing BlpImagePlugin
+2025-04-26 00:51:17,323 - DEBUG - Importing BmpImagePlugin
+2025-04-26 00:51:17,323 - DEBUG - Importing BufrStubImagePlugin
+2025-04-26 00:51:17,325 - DEBUG - Importing CurImagePlugin
+2025-04-26 00:51:17,326 - DEBUG - Importing DcxImagePlugin
+2025-04-26 00:51:17,331 - DEBUG - Importing DdsImagePlugin
+2025-04-26 00:51:17,337 - DEBUG - Importing EpsImagePlugin
+2025-04-26 00:51:17,341 - DEBUG - Importing FitsImagePlugin
+2025-04-26 00:51:17,353 - DEBUG - Importing FliImagePlugin
+2025-04-26 00:51:17,354 - DEBUG - Importing FpxImagePlugin
+2025-04-26 00:51:17,358 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-04-26 00:51:17,359 - DEBUG - Importing FtexImagePlugin
+2025-04-26 00:51:17,360 - DEBUG - Importing GbrImagePlugin
+2025-04-26 00:51:17,362 - DEBUG - Importing GifImagePlugin
+2025-04-26 00:51:17,362 - DEBUG - Importing GribStubImagePlugin
+2025-04-26 00:51:17,363 - DEBUG - Importing Hdf5StubImagePlugin
+2025-04-26 00:51:17,365 - DEBUG - Importing IcnsImagePlugin
+2025-04-26 00:51:17,369 - DEBUG - Importing IcoImagePlugin
+2025-04-26 00:51:17,371 - DEBUG - Importing ImImagePlugin
+2025-04-26 00:51:17,373 - DEBUG - Importing ImtImagePlugin
+2025-04-26 00:51:17,375 - DEBUG - Importing IptcImagePlugin
+2025-04-26 00:51:17,377 - DEBUG - Importing JpegImagePlugin
+2025-04-26 00:51:17,377 - DEBUG - Importing Jpeg2KImagePlugin
+2025-04-26 00:51:17,377 - DEBUG - Importing McIdasImagePlugin
+2025-04-26 00:51:17,379 - DEBUG - Importing MicImagePlugin
+2025-04-26 00:51:17,382 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-04-26 00:51:17,382 - DEBUG - Importing MpegImagePlugin
+2025-04-26 00:51:17,384 - DEBUG - Importing MpoImagePlugin
+2025-04-26 00:51:17,393 - DEBUG - Importing MspImagePlugin
+2025-04-26 00:51:17,395 - DEBUG - Importing PalmImagePlugin
+2025-04-26 00:51:17,397 - DEBUG - Importing PcdImagePlugin
+2025-04-26 00:51:17,398 - DEBUG - Importing PcxImagePlugin
+2025-04-26 00:51:17,398 - DEBUG - Importing PdfImagePlugin
+2025-04-26 00:51:17,412 - DEBUG - Importing PixarImagePlugin
+2025-04-26 00:51:17,414 - DEBUG - Importing PngImagePlugin
+2025-04-26 00:51:17,414 - DEBUG - Importing PpmImagePlugin
+2025-04-26 00:51:17,414 - DEBUG - Importing PsdImagePlugin
+2025-04-26 00:51:17,416 - DEBUG - Importing QoiImagePlugin
+2025-04-26 00:51:17,419 - DEBUG - Importing SgiImagePlugin
+2025-04-26 00:51:17,421 - DEBUG - Importing SpiderImagePlugin
+2025-04-26 00:51:17,423 - DEBUG - Importing SunImagePlugin
+2025-04-26 00:51:17,425 - DEBUG - Importing TgaImagePlugin
+2025-04-26 00:51:17,427 - DEBUG - Importing TiffImagePlugin
+2025-04-26 00:51:17,427 - DEBUG - Importing WebPImagePlugin
+2025-04-26 00:51:17,431 - DEBUG - Importing WmfImagePlugin
+2025-04-26 00:51:17,433 - DEBUG - Importing XbmImagePlugin
+2025-04-26 00:51:17,435 - DEBUG - Importing XpmImagePlugin
+2025-04-26 00:51:17,438 - DEBUG - Importing XVThumbImagePlugin
+2025-04-26 00:51:17,441 - DEBUG - STREAM b'IHDR' 2553 13
+2025-04-26 00:51:17,441 - DEBUG - STREAM b'IDAT' 2578 3554
+2025-04-26 00:53:21,693 - INFO - 程序启动
+2025-04-26 00:53:22,043 - DEBUG - Importing AvifImagePlugin
+2025-04-26 00:53:22,045 - DEBUG - Importing BlpImagePlugin
+2025-04-26 00:53:22,046 - DEBUG - Importing BmpImagePlugin
+2025-04-26 00:53:22,047 - DEBUG - Importing BufrStubImagePlugin
+2025-04-26 00:53:22,048 - DEBUG - Importing CurImagePlugin
+2025-04-26 00:53:22,050 - DEBUG - Importing DcxImagePlugin
+2025-04-26 00:53:22,053 - DEBUG - Importing DdsImagePlugin
+2025-04-26 00:53:22,058 - DEBUG - Importing EpsImagePlugin
+2025-04-26 00:53:22,060 - DEBUG - Importing FitsImagePlugin
+2025-04-26 00:53:22,065 - DEBUG - Importing FliImagePlugin
+2025-04-26 00:53:22,066 - DEBUG - Importing FpxImagePlugin
+2025-04-26 00:53:22,070 - DEBUG - Image: failed to import FpxImagePlugin: No module named 'olefile'
+2025-04-26 00:53:22,070 - DEBUG - Importing FtexImagePlugin
+2025-04-26 00:53:22,072 - DEBUG - Importing GbrImagePlugin
+2025-04-26 00:53:22,073 - DEBUG - Importing GifImagePlugin
+2025-04-26 00:53:22,074 - DEBUG - Importing GribStubImagePlugin
+2025-04-26 00:53:22,075 - DEBUG - Importing Hdf5StubImagePlugin
+2025-04-26 00:53:22,077 - DEBUG - Importing IcnsImagePlugin
+2025-04-26 00:53:22,082 - DEBUG - Importing IcoImagePlugin
+2025-04-26 00:53:22,085 - DEBUG - Importing ImImagePlugin
+2025-04-26 00:53:22,087 - DEBUG - Importing ImtImagePlugin
+2025-04-26 00:53:22,089 - DEBUG - Importing IptcImagePlugin
+2025-04-26 00:53:22,091 - DEBUG - Importing JpegImagePlugin
+2025-04-26 00:53:22,091 - DEBUG - Importing Jpeg2KImagePlugin
+2025-04-26 00:53:22,091 - DEBUG - Importing McIdasImagePlugin
+2025-04-26 00:53:22,093 - DEBUG - Importing MicImagePlugin
+2025-04-26 00:53:22,097 - DEBUG - Image: failed to import MicImagePlugin: No module named 'olefile'
+2025-04-26 00:53:22,097 - DEBUG - Importing MpegImagePlugin
+2025-04-26 00:53:22,099 - DEBUG - Importing MpoImagePlugin
+2025-04-26 00:53:22,108 - DEBUG - Importing MspImagePlugin
+2025-04-26 00:53:22,110 - DEBUG - Importing PalmImagePlugin
+2025-04-26 00:53:22,112 - DEBUG - Importing PcdImagePlugin
+2025-04-26 00:53:22,114 - DEBUG - Importing PcxImagePlugin
+2025-04-26 00:53:22,114 - DEBUG - Importing PdfImagePlugin
+2025-04-26 00:53:22,127 - DEBUG - Importing PixarImagePlugin
+2025-04-26 00:53:22,129 - DEBUG - Importing PngImagePlugin
+2025-04-26 00:53:22,129 - DEBUG - Importing PpmImagePlugin
+2025-04-26 00:53:22,130 - DEBUG - Importing PsdImagePlugin
+2025-04-26 00:53:22,132 - DEBUG - Importing QoiImagePlugin
+2025-04-26 00:53:22,134 - DEBUG - Importing SgiImagePlugin
+2025-04-26 00:53:22,135 - DEBUG - Importing SpiderImagePlugin
+2025-04-26 00:53:22,136 - DEBUG - Importing SunImagePlugin
+2025-04-26 00:53:22,138 - DEBUG - Importing TgaImagePlugin
+2025-04-26 00:53:22,140 - DEBUG - Importing TiffImagePlugin
+2025-04-26 00:53:22,140 - DEBUG - Importing WebPImagePlugin
+2025-04-26 00:53:22,144 - DEBUG - Importing WmfImagePlugin
+2025-04-26 00:53:22,145 - DEBUG - Importing XbmImagePlugin
+2025-04-26 00:53:22,150 - DEBUG - Importing XpmImagePlugin
+2025-04-26 00:53:22,151 - DEBUG - Importing XVThumbImagePlugin
+2025-04-26 00:53:22,153 - DEBUG - STREAM b'IHDR' 2553 13
+2025-04-26 00:53:22,154 - DEBUG - STREAM b'IDAT' 2578 3554
+2025-04-26 01:03:41,332 - INFO - 程序启动
+2025-04-26 01:03:41,624 - WARNING - Logo文件不存在: C:\Users\Administrator\Desktop\Project\src\gui\..\..\resources\logo.png
+2025-04-26 01:03:41,624 - WARNING - 加载Logo失败: 找不到Logo文件: C:\Users\Administrator\Desktop\Project\src\gui\..\..\resources\logo.png
+2025-04-26 01:05:02,827 - INFO - 程序启动
+2025-04-26 01:05:03,218 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 01:05:03,218 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 01:05:59,598 - INFO - 程序启动
+2025-04-26 01:05:59,932 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 01:05:59,933 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 01:07:17,828 - INFO - 程序启动
+2025-04-26 01:07:18,151 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 01:07:18,151 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 10:00:57,656 - INFO - 程序启动
+2025-04-26 10:00:57,983 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 10:00:57,984 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 10:09:04,833 - INFO - 程序启动
+2025-04-26 10:09:05,179 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 10:09:05,179 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:05:01,472 - INFO - 程序启动
+2025-04-26 13:05:02,068 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:05:02,068 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:06:54,465 - INFO - 程序启动
+2025-04-26 13:06:54,888 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:06:54,888 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:06:58,952 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:06:58,953 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:07:17,681 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:07:17,682 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:09:56,381 - INFO - 程序启动
+2025-04-26 13:09:56,774 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:09:56,774 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:10:01,246 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:10:01,246 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:10:18,399 - INFO - 程序启动
+2025-04-26 13:10:18,777 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:10:18,777 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:10:20,987 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:10:20,988 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:10:58,821 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:10:58,822 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:12:34,603 - INFO - 程序启动
+2025-04-26 13:12:40,824 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:12:40,824 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:14:29,677 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:14:29,678 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:14:40,188 - INFO - 程序启动
+2025-04-26 13:14:44,068 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:14:44,068 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:14:49,165 - INFO - 程序启动
+2025-04-26 13:15:00,992 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:15:00,993 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:17:33,268 - INFO - 程序启动
+2025-04-26 13:17:35,633 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:17:35,633 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:20:28,544 - ERROR - 导入文件时发生错误: could not convert string to float: '物理'
+2025-04-26 13:20:28,563 - ERROR - Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 364, in import_student_data
+    '分数': float(sheet.cell_value(row_idx, 4)),
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: '物理'
+
+2025-04-26 13:20:31,654 - ERROR - 导入文件时发生错误: list index out of range
+2025-04-26 13:20:31,674 - ERROR - Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 365, in import_student_data
+    '志愿选择': str(sheet.cell_value(row_idx, 6)).upper(),  # 转换为大写
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\xlrd\sheet.py", line 420, in cell_value
+    return self._cell_values[rowx][colx]
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: list index out of range
+
+2025-04-26 13:20:34,654 - ERROR - 导入文件时发生错误: could not convert string to float: 'A'
+2025-04-26 13:20:34,656 - ERROR - Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 348, in import_student_data
+    '分数': float(row[4].value),
+            ^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'A'
+
+2025-04-26 13:20:38,759 - ERROR - 导入文件时发生错误: could not convert string to float: 'A'
+2025-04-26 13:20:38,760 - ERROR - Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 348, in import_student_data
+    '分数': float(row[4].value),
+            ^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'A'
+
+2025-04-26 13:22:42,048 - INFO - 程序启动
+2025-04-26 13:22:49,351 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:22:49,351 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:22:50,118 - ERROR - 未捕获的异常:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+2025-04-26 13:22:50,138 - ERROR - 未捕获的异常:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+2025-04-26 13:22:50,159 - ERROR - 未捕获的异常:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+2025-04-26 13:22:55,836 - ERROR - 未捕获的异常:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+2025-04-26 13:22:57,224 - ERROR - 未捕获的异常:
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1968, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\Desktop\Project\src\gui\simple_main.py", line 196, in _on_mousewheel
+    canvas.yview_scroll(int(-1*(event.delta/120)), "units")
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 2014, in yview_scroll
+    self.tk.call(self._w, 'yview', 'scroll', number, what)
+_tkinter.TclError: invalid command name ".!toplevel.!frame.!canvas"
+
+2025-04-26 13:25:25,376 - INFO - 程序启动
+2025-04-26 13:28:36,894 - INFO - 程序启动
+2025-04-26 13:28:43,966 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:28:43,967 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:28:48,187 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:28:48,187 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:29:21,066 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:29:21,066 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:30:00,213 - INFO - 程序启动
+2025-04-26 13:30:04,210 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:30:04,211 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:30:08,326 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:30:08,326 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 13:32:04,711 - DEBUG - STREAM b'IHDR' 16 13
+2025-04-26 13:32:10,887 - DEBUG - STREAM b'IDAT' 41 32768
+2025-04-26 14:16:02,700 - INFO - 程序启动
+2025-05-17 20:47:04,323 - INFO - 程序启动
+2026-02-12 16:51:14,029 - INFO - 程序启动
