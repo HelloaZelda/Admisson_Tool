@@ -529,14 +529,19 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
                 ws.append(headers)
                 
                 # 写入数据
+                def sanitize_for_excel(val):
+                    if isinstance(val, str) and val.startswith(('=', '+', '-', '@', '\t', '\r')):
+                        return "'" + val
+                    return val
+
                 for student in self.student_data:
                     ws.append([
-                        student['序号'],
-                        student['学号'],
-                        student['姓名'],
+                        sanitize_for_excel(student['序号']),
+                        sanitize_for_excel(student['学号']),
+                        sanitize_for_excel(student['姓名']),
                         student['分数'],
-                        student['志愿选择'],
-                        student.get('录取专业', '')
+                        sanitize_for_excel(student['志愿选择']),
+                        sanitize_for_excel(student.get('录取专业', ''))
                     ])
                 
                 # 调整列宽
