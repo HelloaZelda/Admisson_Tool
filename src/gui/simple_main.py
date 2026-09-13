@@ -369,22 +369,23 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
                             self.student_data.append(student)
                 
                 elif file_name.endswith('.xlsx'):
-                    # 使用openpyxl读取xlsx文件
-                    wb = load_workbook(file_name)
+                    # 使用openpyxl读取xlsx文件，使用read_only和data_only提高性能
+                    wb = load_workbook(file_name, read_only=True, data_only=True)
                     sheet = wb.active
                     
-                    # 读取数据
-                    for row in sheet.iter_rows(min_row=2):
+                    # 读取数据，使用values_only提高性能
+                    for row in sheet.iter_rows(min_row=2, values_only=True):
                         student = {
-                            '序号': row[0].value,
-                            '排名': row[0].value,
-                            '学号': row[1].value,
-                            '姓名': row[2].value,
-                            '分数': float(row[4].value),
-                            '志愿选择': str(row[6].value).upper(),  # 转换为大写
-                            '专业': row[7].value
+                            '序号': row[0],
+                            '排名': row[0],
+                            '学号': row[1],
+                            '姓名': row[2],
+                            '分数': float(row[4]) if row[4] is not None else 0.0,
+                            '志愿选择': str(row[6]).upper() if row[6] is not None else "",  # 转换为大写
+                            '专业': row[7]
                         }
                         self.student_data.append(student)
+                    wb.close()
                 else:
                     # 使用xlrd读取xls文件
                     workbook = xlrd.open_workbook(file_name)
@@ -568,8 +569,8 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
     
     def update_results_table(self):
         # 清除现有项目
-        for item in self.results_tree.get_children():
-            self.results_tree.delete(item)
+        if self.results_tree.get_children():
+            self.results_tree.delete(*self.results_tree.get_children())
         
         # 添加数据到树形视图
         for student in self.student_data:
