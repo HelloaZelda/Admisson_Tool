@@ -2,6 +2,17 @@ import xlrd
 import xlwt
 from collections import defaultdict
 
+def sanitize_excel_input(value):
+    """
+    Security Enhancement: Sanitize user input to prevent CSV/Formula Injection
+    when exporting data to Excel formats.
+    """
+    if not isinstance(value, str):
+        value = str(value) if value is not None else ""
+    if value and value[0] in ('=', '+', '-', '@', '\t', '\r', '\n'):
+        return "'" + value
+    return value
+
 def read_excel(file_path):
     """读取Excel文件并返回数据"""
     workbook = xlrd.open_workbook(file_path)
@@ -45,7 +56,8 @@ def write_results(stats, output_file):
     # 写入数据
     for row, (major, counts) in enumerate(stats.items(), 1):
         total = sum(counts.values())
-        ws.write(row, 0, major)
+        safe_major = sanitize_excel_input(major)
+        ws.write(row, 0, safe_major)
         ws.write(row, 1, counts['first'])
         ws.write(row, 2, counts['second'])
         ws.write(row, 3, counts['third'])
