@@ -22,6 +22,9 @@ UNASSIGNED_LABEL = "未分配"
 
 
 def _norm_choice(value: Any) -> str:
+    # ⚡ Bolt: Fast-path for common string case to avoid str() overhead
+    if type(value) is str:
+        return value.strip().upper()
     if value is None:
         return ""
     return str(value).strip().upper()
@@ -55,6 +58,9 @@ def assign_admissions(
     # Copy input students into mutable dicts so callers can pass in mapping/rows safely.
     items: List[Dict[str, Any]] = [dict(s) for s in students]
 
+    # ⚡ Bolt: Track total remaining quotas to short-circuit operations when full
+    total_remaining = sum(remaining.values())
+
     def score_of(s: Mapping[str, Any]) -> float:
         try:
             return float(s.get(score_key, 0))
@@ -74,10 +80,11 @@ def assign_admissions(
             continue
 
         assigned_major: Optional[str] = None
-        if choice:
+        if choice and total_remaining > 0:
             for major in preference_mapping[choice]:
                 if remaining.get(major, 0) > 0:
                     remaining[major] -= 1
+                    total_remaining -= 1
                     assigned_major = major
                     break
 
@@ -86,11 +93,17 @@ def assign_admissions(
             continue
 
         # Adjustment: any remaining slot.
-        for major, q in list(remaining.items()):
-            if q > 0:
-                remaining[major] -= 1
-                s[assigned_key] = f"{major}{adjust_suffix}"
-                break
+        # ⚡ Bolt: Only loop through remaining items if we actually have slots left.
+        # Avoids O(N*M) loop when quotas are exhausted.
+        if total_remaining > 0:
+            for major, q in remaining.items():
+                if q > 0:
+                    remaining[major] -= 1
+                    total_remaining -= 1
+                    s[assigned_key] = f"{major}{adjust_suffix}"
+                    break
+            else:
+                s[assigned_key] = unassigned_label
         else:
             s[assigned_key] = unassigned_label
 
