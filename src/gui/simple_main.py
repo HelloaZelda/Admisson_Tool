@@ -20,6 +20,17 @@ from src.core.admission import (
 from src.core.preferences import PREFERENCE_MAPPING
 
 # 设置日志
+def sanitize_excel_input(value):
+    """
+    Security Enhancement: Sanitize user input to prevent CSV/Formula Injection
+    when exporting data to Excel or CSV formats.
+    """
+    if not isinstance(value, str):
+        value = str(value) if value is not None else ""
+    if value and value[0] in ('=', '+', '-', '@', '\t', '\r', '\n'):
+        return "'" + value
+    return value
+
 def setup_logging():
     log_dir = os.path.join(os.path.dirname(os.path.abspath(sys.argv[0])), 'logs')
     os.makedirs(log_dir, exist_ok=True)
@@ -533,10 +544,10 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
                     ws.append([
                         student['序号'],
                         student['学号'],
-                        student['姓名'],
+                        sanitize_excel_input(student['姓名']),
                         student['分数'],
-                        student['志愿选择'],
-                        student.get('录取专业', '')
+                        sanitize_excel_input(student['志愿选择']),
+                        sanitize_excel_input(student.get('录取专业', ''))
                     ])
                 
                 # 调整列宽

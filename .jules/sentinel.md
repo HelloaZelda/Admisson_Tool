@@ -1,0 +1,4 @@
+## 2024-05-18 - Formula/CSV Injection in Excel Export
+**Vulnerability:** User-controlled strings (like student names, choice strings, or imported major strings) were being directly written to Excel files during export in `src/gui/simple_main.py` and `src/utils/process_excel.py`. This allows an attacker to inject Excel formulas (e.g., starting with `=`) that could execute arbitrary commands when the spreadsheet is opened.
+**Learning:** The application extensively uses `openpyxl` and `xlwt` for exporting data but lacked a centralized output sanitization layer for user-provided data.
+**Prevention:** All user-controlled strings exported to spreadsheets must be sanitized by prepending a single quote (`'`) to values starting with `=`, `+`, `-`, `@`, `\t`, `\r`, or `\n`. Created a `sanitize_excel_input` helper function to apply this consistently before writing to the spreadsheet.
