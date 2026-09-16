@@ -18,6 +18,7 @@ from src.core.admission import (
     assign_admissions,
 )
 from src.core.preferences import PREFERENCE_MAPPING
+from src.utils.security import sanitize_excel_input
 
 # 设置日志
 def setup_logging():
@@ -532,10 +533,10 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
                 for student in self.student_data:
                     ws.append([
                         student['序号'],
-                        student['学号'],
-                        student['姓名'],
+                        sanitize_excel_input(student['学号']),
+                        sanitize_excel_input(student['姓名']),
                         student['分数'],
-                        student['志愿选择'],
+                        sanitize_excel_input(student['志愿选择']),
                         student.get('录取专业', '')
                     ])
                 
