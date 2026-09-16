@@ -51,6 +51,7 @@ def assign_admissions(
     """
 
     remaining: Dict[str, int] = {k: int(v) for k, v in quotas.items()}
+    total_remaining: int = sum(remaining.values())
 
     # Copy input students into mutable dicts so callers can pass in mapping/rows safely.
     items: List[Dict[str, Any]] = [dict(s) for s in students]
@@ -64,6 +65,12 @@ def assign_admissions(
     items.sort(key=score_of, reverse=sort_desc)
 
     for s in items:
+        if total_remaining <= 0:
+            # Performance Optimization: Short-circuit string parsing, preference loops,
+            # and adjustment loops if no quotas remain across all majors.
+            s[assigned_key] = unassigned_label
+            continue
+
         choice = _norm_choice(s.get(choice_key))
 
         # Distinguish between "blank choice" and "invalid code".
@@ -78,6 +85,7 @@ def assign_admissions(
             for major in preference_mapping[choice]:
                 if remaining.get(major, 0) > 0:
                     remaining[major] -= 1
+                    total_remaining -= 1
                     assigned_major = major
                     break
 
@@ -89,6 +97,7 @@ def assign_admissions(
         for major, q in list(remaining.items()):
             if q > 0:
                 remaining[major] -= 1
+                total_remaining -= 1
                 s[assigned_key] = f"{major}{adjust_suffix}"
                 break
         else:
