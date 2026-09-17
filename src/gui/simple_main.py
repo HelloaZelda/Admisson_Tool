@@ -532,7 +532,7 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
                 # 写入数据
                 for student in self.student_data:
                     ws.append([
-                        student['序号'],
+                        sanitize_excel_input(student['序号']),
                         sanitize_excel_input(student['学号']),
                         sanitize_excel_input(student['姓名']),
                         student['分数'],
