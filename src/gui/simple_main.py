@@ -532,12 +532,13 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
                 # 写入数据
                 for student in self.student_data:
                     ws.append([
-                        student['序号'],
+                        # Security: Sanitize numeric-sounding fields as they can still contain injection payloads
+                        sanitize_excel_input(student['序号']),
                         sanitize_excel_input(student['学号']),
                         sanitize_excel_input(student['姓名']),
-                        student['分数'],
+                        sanitize_excel_input(student['分数']),
                         sanitize_excel_input(student['志愿选择']),
-                        student.get('录取专业', '')
+                        sanitize_excel_input(student.get('录取专业', ''))
                     ])
                 
                 # 调整列宽
