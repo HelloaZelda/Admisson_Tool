@@ -27,7 +27,11 @@ class AdmissionAlgorithm:
         """
         # Ranking: smaller is better.
         sorted_students = student_data.sort_values("排名")
-        rows = sorted_students.to_dict(orient="records")
+        # Optimize pandas to_dict('records') conversion by unboxing columns
+        # to lists and zipping them. This avoids pandas internal boxing overhead.
+        columns = sorted_students.columns.tolist()
+        values = zip(*[sorted_students[col].tolist() for col in columns])
+        rows = [dict(zip(columns, v)) for v in values]
         quotas: Dict[str, int] = {k: int(v) for k, v in self.remaining_quotas.items()}
         result = assign_admissions(
             rows,
