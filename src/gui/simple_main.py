@@ -535,7 +535,7 @@ F：通信工程 > 电磁场与无线技术 > 电子信息工程
                         sanitize_excel_input(student['序号']),
                         sanitize_excel_input(student['学号']),
                         sanitize_excel_input(student['姓名']),
-                        student['分数'],
+                        sanitize_excel_input(student['分数']),
                         sanitize_excel_input(student['志愿选择']),
                         sanitize_excel_input(student.get('录取专业', ''))
                     ])
