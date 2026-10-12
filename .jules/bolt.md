@@ -4,3 +4,6 @@
 ## 2023-10-27 - Fast Pandas DataFrame to Dictionary List Unboxing
 **Learning:** `df.to_dict('records')` is a known performance bottleneck in Python/Pandas applications due to deep internal type checking and slow object boxing for every single cell. It was used in `src/admission_algorithm.py` before passing the data to standard Python sorting.
 **Action:** Bypassing it by extracting native Python lists with `.tolist()` on each column and re-assembling them into a list of dictionaries with `zip()` gives a massive 2-3x speedup on dictionary extraction without altering behaviour. Use this pattern whenever moving from Pandas blocks to native Python object lists.
+## 2025-02-18 - Python dict iteration during value mutation
+**Learning:** In Python, it is safe to iterate over `dict.items()` directly while modifying the values (as long as keys are not added or removed). Using `list(dict.items())` to create a copy of the items before iteration is an unnecessary memory allocation and performance bottleneck.
+**Action:** When iterating over a dictionary just to update its values (like deducting remaining quotas), use `for k, v in my_dict.items():` directly instead of wrapping it in `list()`. This avoids an O(M) allocation and provides a noticeable speedup, especially in tight loops.
