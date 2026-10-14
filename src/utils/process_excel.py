@@ -2,6 +2,8 @@ import xlrd
 import xlwt
 from collections import defaultdict
 
+from src.utils.security import sanitize_excel_input
+
 def read_excel(file_path):
     """读取Excel文件并返回数据"""
     workbook = xlrd.open_workbook(file_path)
@@ -45,7 +47,7 @@ def write_results(stats, output_file):
     # 写入数据
     for row, (major, counts) in enumerate(stats.items(), 1):
         total = sum(counts.values())
-        ws.write(row, 0, major)
+        ws.write(row, 0, sanitize_excel_input(major))
         ws.write(row, 1, counts['first'])
         ws.write(row, 2, counts['second'])
         ws.write(row, 3, counts['third'])
