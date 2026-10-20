@@ -7,3 +7,7 @@
 **Vulnerability:** The sequence number ("序号") and output major field ("录取专业") were exported to Excel files via `openpyxl.Workbook.append()` without sanitization. Although "序号" implies a numeric sequence, in the underlying untrusted CSV data it is parsed as an arbitrary string which could trigger CSV/Formula Injection.
 **Learning:** We must sanitize ALL user-controlled string fields, including fields that appear safe or numeric-sounding (like sequence numbers or IDs) because they originate from untrusted external sources and can carry payloads.
 **Prevention:** Always apply the CSV injection sanitization wrapper to all string fields extracted from untrusted CSV/Excel inputs, and output fields derived from those inputs, prior to Excel export.
+## 2026-10-20 - CSV/Formula Injection in Dictionary Keys
+**Vulnerability:** Untrusted string values used as dictionary keys ('major' from Excel input) were exported to Excel without sanitization, leading to CSV/Formula Injection.
+**Learning:** Aggregation keys or headers that originate from untrusted sources carry the same injection payload risk as direct user input fields when exported to native Excel files.
+**Prevention:** Apply input sanitization (e.g., prepending a single quote) to all user-controlled data exported to spreadsheets, including fields used as aggregation headers or keys.
