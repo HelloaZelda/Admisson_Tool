@@ -1,5 +1,6 @@
 import xlrd
 import xlwt
+from src.utils.security import sanitize_excel_input
 from collections import defaultdict
 
 def read_excel(file_path):
@@ -45,7 +46,8 @@ def write_results(stats, output_file):
     # 写入数据
     for row, (major, counts) in enumerate(stats.items(), 1):
         total = sum(counts.values())
-        ws.write(row, 0, major)
+        # Prevent CSV/Formula Injection by sanitizing the major string
+        ws.write(row, 0, sanitize_excel_input(major))
         ws.write(row, 1, counts['first'])
         ws.write(row, 2, counts['second'])
         ws.write(row, 3, counts['third'])
