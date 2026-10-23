@@ -94,7 +94,8 @@ def assign_admissions(
             continue
 
         # Adjustment: any remaining slot.
-        for major, q in list(remaining.items()):
+        # ⚡ Bolt optimization: Iterating directly over dict.items() without list() avoids O(M) memory allocations in this tight loop. Modifying values is safe.
+        for major, q in remaining.items():
             if q > 0:
                 remaining[major] -= 1
                 total_remaining -= 1
