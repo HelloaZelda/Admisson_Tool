@@ -4,3 +4,6 @@
 ## 2023-10-27 - Fast Pandas DataFrame to Dictionary List Unboxing
 **Learning:** `df.to_dict('records')` is a known performance bottleneck in Python/Pandas applications due to deep internal type checking and slow object boxing for every single cell. It was used in `src/admission_algorithm.py` before passing the data to standard Python sorting.
 **Action:** Bypassing it by extracting native Python lists with `.tolist()` on each column and re-assembling them into a list of dictionaries with `zip()` gives a massive 2-3x speedup on dictionary extraction without altering behaviour. Use this pattern whenever moving from Pandas blocks to native Python object lists.
+## 2026-10-25 - Safe Dictionary Iteration in Admissions Adjustment Loop
+**Learning:** In Python, modifying dictionary values (but not keys) while iterating directly over `dict.items()` is perfectly safe. The previous implementation wrapped the view in `list()` which caused unnecessary O(M) memory allocations on every iteration of the tight admissions adjustment loop.
+**Action:** Avoid wrapping `dict.items()` in `list()` when only dictionary values are being updated.
